@@ -1,0 +1,9 @@
+- type: entity
+  id: StationAnchorAlien
+  parent: StationAnchorBase
+  suffix: Indestructible, Unpowered
+  name: alien station core
+  description: Prevents station from moving; periodically performs an FTL jump.
+  components:
+  - type: AutoExpeditionJumper
+  - type: ShuttleDestinationCoordinates

@@ -171,7 +171,7 @@ public sealed partial class SalvageSystem
         return new SalvageExpeditionConsoleState(component.NextOffer, component.Claimed, component.Cooldown, component.ActiveMission, missions);
     }
 
-    private void SpawnMission(SalvageMissionParams missionParams, EntityUid station, EntityUid? coordinatesDisk)
+    public void SpawnMission(SalvageMissionParams missionParams, EntityUid station, EntityUid? coordinatesDisk) // Starlight-edit - made public
     {
         var cancelToken = new CancellationTokenSource();
         var job = new SpawnSalvageMissionJob(

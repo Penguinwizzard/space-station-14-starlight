@@ -1,0 +1,8 @@
+# Simply serves as a return point for expeditions
+- type: entity
+  id: StationReturnPoint
+  parent: BaseStation
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+
