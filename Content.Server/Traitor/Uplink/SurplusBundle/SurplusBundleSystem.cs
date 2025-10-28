@@ -41,7 +41,7 @@ public sealed class SurplusBundleSystem : EntitySystem
     }
 
     // wow, is this leetcode reference?
-    private List<ListingData> GetRandomContent(Entity<SurplusBundleComponent, StoreComponent> ent)
+    internal List<ListingData> GetRandomContent(Entity<SurplusBundleComponent, StoreComponent> ent)
     {
         var ret = new List<ListingData>();
 
